@@ -2,7 +2,7 @@
 
 ## Projeto Vibe Coding fluxo inteligente com IA Google Antigravity 💻 
 
-Mentoria: Gabriela Surita, Engenheira de pesquisa na Google DeepMind, vai te mostrar o passo a passo para construir do zero um projeto com IA aplicado ao seu dia a dia.
+Mentoria: Gabriela Surita, Engenheira de pesquisa na Google DeepMind, apresentou o passo a passo para construir do zero um projeto com IA.
 
   ✅  Acessa seus e-mails automaticamente <br>
   ✅  Usa IA para analisar e resumir conteúdos <br>
