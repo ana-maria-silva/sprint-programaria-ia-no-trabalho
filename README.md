@@ -4,18 +4,18 @@
 
 Mentoria: Gabriela Surita, Engenheira de pesquisa na Google DeepMind, vai te mostrar o passo a passo para construir do zero um projeto com IA aplicado ao seu dia a dia.
 
-  ✅  Acessa seus e-mails automaticamente
-  ✅  Usa IA para analisar e resumir conteúdos
-  ✅  Organiza informações importantes em formato útil
-  ✅  Pode evoluir para um assistente pessoal inteligente 
+  ✅  Acessa seus e-mails automaticamente <br>
+  ✅  Usa IA para analisar e resumir conteúdos <br>
+  ✅  Organiza informações importantes em formato útil <br>
+  ✅  Pode evoluir para um assistente pessoal inteligente  <br>
 
 ### A Sprint PrograMaria incluiu:
 
-📚  Fundamentos de IA Generativa
-📚  Prompting e uso prático no trabalho
-📚  Automação de tarefas e fluxos
-📚  Desenvolvimento com APIs e agentes
-📚  Escala, automação e governança
-📚  Governança, riscos e responsabilidade
+📚  Fundamentos de IA Generativa <br>
+📚  Prompting e uso prático no trabalho <br>
+📚  Automação de tarefas e fluxos <br>
+📚  Desenvolvimento com APIs e agentes <br>
+📚  Escala, automação e governança <br>
+📚  Governança, riscos e responsabilidade <br>
 
 #### A PrograMaria Sprint é um mini curso online para organizar seu aprendizado e te ajudar a sair do básico, com prática, reflexão e projeto
