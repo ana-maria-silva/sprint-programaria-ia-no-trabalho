@@ -2,7 +2,9 @@
 
 ## Projeto Vibe Coding fluxo inteligente com IA Google Antigravity 💻 
 
-Mentoria: Gabriela Surita, Engenheira de pesquisa na Google DeepMind, apresentou o passo a passo para construir do zero um projeto com IA.
+### Objetivo
+
+Criação de Dashboard pessoal para gerenciamento de tarefas utilizando Google Antigravity IDE.
 
   ✅  Acessa seus e-mails automaticamente <br>
   ✅  Usa IA para analisar e resumir conteúdos <br>
@@ -21,3 +23,5 @@ Mentoria: Gabriela Surita, Engenheira de pesquisa na Google DeepMind, apresentou
  ✅ Google Antigravity IDE
 
 #### A PrograMaria Sprint é um mini curso online para organizar seu aprendizado e te ajudar a sair do básico, com prática, reflexão e projeto
+
+Mentoria: Gabriela Surita @gabisurita, Engenheira de pesquisa na Google DeepMind.
