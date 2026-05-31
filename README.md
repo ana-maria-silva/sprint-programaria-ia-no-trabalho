@@ -24,4 +24,8 @@ Criação de Dashboard pessoal para gerenciamento de tarefas utilizando Google A
 
 #### A PrograMaria Sprint é um mini curso online para organizar seu aprendizado e te ajudar a sair do básico, com prática, reflexão e projeto
 
+### Referências
+
+- [Sprint PrograMaria IA no Trabalho](https://vamosjuntes.programaria.org/sprint-ia-no-trabalho)
+
 Mentoria: Gabriela Surita @gabisurita, Engenheira de pesquisa na Google DeepMind.
