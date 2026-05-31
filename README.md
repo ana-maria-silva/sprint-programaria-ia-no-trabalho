@@ -1,4 +1,4 @@
-# 🖥️ Por onde começo? — Dashboard Pessoal de Início de Dia
+# Projeto Dashboard com IA — Google Antigravity 
 
 > Projeto desenvolvido durante a **Sprint PrograMaria: IA no Trabalho** com uso de **Vibe Coding** assistido por IA — Google Antigravity IDE.
 
@@ -113,7 +113,7 @@ Este projeto foi desenvolvido como **projeto prático** da Sprint PrograMaria de
 
 ## 👩‍💻 Autora
 
-**Ana Maria Silva**
+### Ana Maria Silva
 
 [![Portfolio](https://img.shields.io/badge/Portfólio-anamaria.dev.br-00F0FF?style=flat-square&logoColor=black)](https://www.anamaria.dev.br)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-anamariasilva-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anamariasilva)
