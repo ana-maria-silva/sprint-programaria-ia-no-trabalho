@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Por onde começo? — Dashboard</title>
+  <meta name="description" content="Dashboard de início de dia: tarefas, metas e notas num só lugar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header>
+    <div class="header-left">
+      <p class="hello">👋 Hello World, Ana Maria!</p>
+      <h1>Por onde começo?</h1>
+      <p class="tagline">Defina o seu foco antes de abrir qualquer outra aba.</p>
+    </div>
+    <div class="header-right">
+      <div id="clock">00:00:00</div>
+      <div id="date-display">carregando…</div>
+    </div>
+  </header>
+
+  <!-- ── GRID ───────────────────────────────────────────────── -->
+  <div class="grid">
+
+    <!-- TAREFAS DO DIA -->
+    <div class="card col-left">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon icon-blue">✅</span>
+          Tarefas do dia
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-track">
+            <div class="progress-fill" id="task-progress" style="width:0%"></div>
+          </div>
+          <span class="progress-label" id="task-counter">0 / 0</span>
+        </div>
+      </div>
+
+      <div class="task-input-row">
+        <input id="task-input" class="input-text" type="text"
+          placeholder="Nova tarefa… (Enter para adicionar)" maxlength="120" />
+        <button id="task-add" class="btn btn-primary" onclick="addTask()">+ Add</button>
+      </div>
+
+      <div class="task-list" id="task-list">
+        <p class="empty-state" id="task-empty">Nenhuma tarefa ainda. Adicione a primeira!</p>
+      </div>
+    </div>
+
+    <!-- METAS DO SPRINT / SEMANA -->
+    <div class="card col-right">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon icon-amber">🎯</span>
+          Metas da semana
+        </div>
+        <button class="btn btn-primary" style="padding:6px 12px;font-size:0.78rem"
+          onclick="addGoal()">+ Meta</button>
+      </div>
+
+      <div class="goal-list" id="goal-list">
+        <p class="empty-state" id="goal-empty">Nenhuma meta ainda. Defina o que quer conquistar!</p>
+      </div>
+    </div>
+
+    <!-- NOTAS RÁPIDAS -->
+    <div class="card col-full">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon icon-teal">📝</span>
+          Notas rápidas
+        </div>
+        <span class="saved-badge" id="saved-badge">✓ salvo</span>
+      </div>
+      <textarea id="notes"
+        class="notes-area"
+        placeholder="Use este espaço para pensamentos soltos, links, lembretes… tudo que quiser ter à mão no início do dia."></textarea>
+    </div>
+
+    <!-- E-MAILS DA SEMANA -->
+    <div class="card col-full">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon icon-blue">📧</span>
+          E-mails recebidos — última semana
+        </div>
+        <span class="chart-total" id="email-total"></span>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="emailChart"></canvas>
+      </div>
+    </div>
+
+    <!-- AGENDA SEMANAL -->
+    <div class="card col-full">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="icon icon-blue">📅</span>
+          Agenda da semana
+        </div>
+        <span class="chart-total" id="week-range"></span>
+      </div>
+
+      <!-- legenda de tipos -->
+      <div class="agenda-legend">
+        <span class="legend-item legend-meeting">Reunião</span>
+        <span class="legend-item legend-task">Tarefa</span>
+        <span class="legend-item legend-todo">TO DO</span>
+      </div>
+
+      <div class="agenda-scroll">
+        <div class="agenda-grid" id="agenda-grid"></div>
+      </div>
+    </div>
+
+  </div><!-- /grid -->
+</div><!-- /wrapper -->
+
+<footer class="site-footer">
+  <span>Feito com 💙 por</span>
+  <a href="https://www.anamaria.dev.br/" target="_blank" rel="noopener" class="footer-link">
+    anamaria.dev.br
+  </a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
