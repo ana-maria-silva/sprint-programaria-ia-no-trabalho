@@ -4,7 +4,7 @@
 
 <br>
 
-## 📌 Sobre o projeto
+## 💻 Sobre o projeto
 
 **Por onde começo?** é um dashboard pessoal de produtividade desenvolvido para ser a **primeira tela aberta no início do dia de trabalho**. Em vez de abrir e-mails ou redes sociais sem foco, a proposta é simples: antes de qualquer outra aba, defina suas prioridades.
 
@@ -18,7 +18,7 @@ O dashboard reúne, em uma única interface, as principais informações e ferra
 |---|---|
 | ✅ **Tarefas do dia** | Lista de tarefas com checkbox, barra de progresso e persistência automática via `localStorage` |
 | 🎯 **Metas da semana** | Metas editáveis em linha, marcáveis como concluídas e salvas automaticamente |
-| 📝 **Notas rápidas** | Área de texto livre com salvamento automático com debounce (sem perder nada) |
+| 📝 **Notas rápidas** | Área de texto livre com salvamento automático |
 | 📧 **E-mails da semana** | Gráfico de barras com volume de e-mails recebidos por dia (Chart.js) |
 | 📅 **Agenda semanal** | Visualização da semana atual com eventos categorizados por tipo (Reunião, Tarefa, TO DO) |
 | 🕐 **Relógio em tempo real** | Relógio digital atualizado a cada segundo com data por extenso em português |
@@ -111,7 +111,7 @@ Este projeto foi desenvolvido como **projeto prático** da Sprint PrograMaria de
 
 <br>
 
-## 👩‍💻 Autora
+## 🌐 Autora
 
 ### Ana Maria Silva
 
