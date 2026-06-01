@@ -79,7 +79,7 @@ sprint-programaria-ia-no-trabalho/
 
 <br>
 
-## 🎨 Design
+## 🌐 Design
 
 O visual do dashboard foi inspirado no portfólio pessoal **[anamaria.dev.br](https://www.anamaria.dev.br)** e segue a mesma linguagem visual:
 
@@ -111,7 +111,7 @@ Este projeto foi desenvolvido como **projeto prático** da Sprint PrograMaria de
 
 <br>
 
-## 🌐 Autora
+## Autora
 
 ### Ana Maria Silva
 
