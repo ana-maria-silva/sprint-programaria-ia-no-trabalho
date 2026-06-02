@@ -80,9 +80,6 @@ http://localhost:8000
 https://ana-maria-silva.github.io
 ```
 
-> ⚠️ **Importante:** Ao hospedar em um novo domínio, adicione a origem no Google Cloud Console em:
-> `APIs e Serviços → Credenciais → [seu Client ID] → Origens JavaScript autorizadas`
-
 <br>
 
 ## 🛠️ Tecnologias e Ferramentas
@@ -229,10 +226,6 @@ Caso queira configurar o projeto com suas próprias credenciais do Google:
    ```
    http://localhost:8000
    https://seu-usuario.github.io
-   ```
-6. Copie o Client ID e substitua em `script.js`:
-   ```js
-   const GOOGLE_CLIENT_ID = 'SEU_CLIENT_ID_AQUI';
    ```
 
 <br>
