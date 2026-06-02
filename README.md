@@ -14,7 +14,7 @@ O dashboard reúne, em uma única interface, as principais informações e ferra
 
 ## 🌐 Demo ao vivo
 
-🔗 **[ana-maria-silva.github.io/sprint-programaria-ia-no-trabalho](https://ana-maria-silva.github.io/sprint-programaria-ia-no-trabalho/)**
+🔗 **[ana-maria-silva.github.io/projeto-dashboard-ia](https://ana-maria-silva.github.io/projeto-dashboard-ia/)**
 
 <br>
 
@@ -116,7 +116,7 @@ https://ana-maria-silva.github.io
 ## 🗂️ Estrutura do Projeto
 
 ```
-sprint-programaria-ia-no-trabalho/
+projeto-dashboard-ia/
 │
 ├── index.html      # Estrutura HTML — overlays, header, grid, cards, footer
 ├── style.css       # Estilização completa — design system, tokens, responsividade, animações
@@ -191,10 +191,10 @@ O fluxo é totalmente **client-side** — nenhum dado é enviado a um servidor e
 
 ```bash
 # Clone o repositório
-git clone https://github.com/ana-maria-silva/sprint-programaria-ia-no-trabalho.git
+git clone https://github.com/ana-maria-silva/projeto-dashboard-ia.git
 
 # Acesse a pasta
-cd sprint-programaria-ia-no-trabalho
+cd projeto-dashboard-ia
 
 # Abra com um servidor local (necessário para o OAuth funcionar)
 # Opção 1 — Python
