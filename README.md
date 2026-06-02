@@ -10,6 +10,8 @@
 
 O dashboard reúne, em uma única interface, as principais informações e ferramentas para organizar o dia — tudo funcionando **100% no navegador**, sem back-end. Com a conexão opcional à conta Google, os dados de **Gmail** e **Google Calendar** são exibidos em tempo real diretamente no dashboard.
 
+![Screenshot do Dashboard](image.png)
+
 <br>
 
 ## 🌐 Demo ao vivo
