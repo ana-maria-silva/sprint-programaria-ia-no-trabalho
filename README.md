@@ -1,10 +1,10 @@
 # Dashboard com IA por Ana Maria Silva
 
-> Meu Projeto desenvolvido durante a **Sprint PrograMaria: IA no Trabalho** com uso de **Vibe Coding** assistido por IA — Google Antigravity IDE.
+> Meu Projeto desenvolvido durante a **Sprint PrograMaria: IA no Trabalho** com uso de **Vibe Coding** assistido por IA — Google Antigravity com Antigravity IDE.
 
 <br>
 
-## 💻 Sobre o projeto
+## 💻 Sobre o Projeto
 
 **Por onde começo?** é um dashboard pessoal de produtividade criado para ser a **primeira tela aberta no início do dia de trabalho**. A proposta é simples: antes de abrir qualquer outra aba, defina suas prioridades.
 
