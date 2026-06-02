@@ -1,4 +1,114 @@
 /* ══════════════════════════════════════════════════════════════
+   TECH BACKGROUND CANVAS — Partículas conectadas (login overlay)
+══════════════════════════════════════════════════════════════ */
+(function initTechCanvas() {
+  const canvas = document.getElementById('tech-bg-canvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  const NUM_PARTICLES = 70;
+  const MAX_DIST      = 160;
+  const SPEED         = 0.35;
+
+  let W, H, particles;
+
+  /* Paleta de azul escuro tech */
+  const COLORS = [
+    'rgba(0, 160, 255, ',
+    'rgba(0, 100, 220, ',
+    'rgba(30, 180, 255, ',
+    'rgba(0, 60, 180, ',
+    'rgba(80, 200, 255, ',
+  ];
+
+  function resize() {
+    W = canvas.width  = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+  }
+
+  function rand(min, max) { return Math.random() * (max - min) + min; }
+
+  function createParticle() {
+    return {
+      x:    rand(0, W),
+      y:    rand(0, H),
+      vx:   rand(-SPEED, SPEED),
+      vy:   rand(-SPEED, SPEED),
+      r:    rand(1.2, 2.8),
+      col:  COLORS[Math.floor(Math.random() * COLORS.length)],
+      alpha: rand(0.35, 0.85),
+    };
+  }
+
+  function init() {
+    resize();
+    particles = Array.from({ length: NUM_PARTICLES }, createParticle);
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    /* Linhas de conexão */
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const a = particles[i], b = particles[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < MAX_DIST) {
+          const strength = 1 - dist / MAX_DIST;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.strokeStyle = `rgba(0, 130, 255, ${strength * 0.20})`;
+          ctx.lineWidth = strength * 1.2;
+          ctx.stroke();
+        }
+      }
+    }
+
+    /* Partículas */
+    particles.forEach(p => {
+      /* Glow exterior */
+      const grd = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 6);
+      grd.addColorStop(0, p.col + (p.alpha * 0.6) + ')');
+      grd.addColorStop(1, p.col + '0)');
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r * 6, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+
+      /* Ponto central */
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.col + p.alpha + ')';
+      ctx.fill();
+
+      /* Movimento */
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < -10)    { p.x = W + 10; }
+      if (p.x > W + 10) { p.x = -10; }
+      if (p.y < -10)    { p.y = H + 10; }
+      if (p.y > H + 10) { p.y = -10; }
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  /* Só roda enquanto o overlay estiver visível */
+  function startIfVisible() {
+    const overlay = document.getElementById('login-overlay');
+    if (overlay && overlay.style.display !== 'none') {
+      requestAnimationFrame(draw);
+    }
+  }
+
+  window.addEventListener('resize', () => { resize(); });
+  init();
+  requestAnimationFrame(draw);
+})();
+
+/* ══════════════════════════════════════════════════════════════
    AUTH — constantes e estado
 ══════════════════════════════════════════════════════════════ */
 const GOOGLE_CLIENT_ID =
