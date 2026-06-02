@@ -1,6 +1,6 @@
-# Ana Maria Silva — Dashboard com IA
+# Dashboard com IA por Ana Maria Silva
 
-> Projeto desenvolvido durante a **Sprint PrograMaria: IA no Trabalho** com uso de **Vibe Coding** assistido por IA — Google Antigravity IDE.
+> Meu Projeto desenvolvido durante a **Sprint PrograMaria: IA no Trabalho** com uso de **Vibe Coding** assistido por IA — Google Antigravity IDE.
 
 <br>
 
