@@ -14,9 +14,9 @@ O dashboard reúne, em uma única interface, as principais informações e ferra
 
 <br>
 
-## 🌐 Demo ao vivo
+## 🌐 Projeto publicado no GitHub Pages
 
-🔗 **[ana-maria-silva.github.io/projeto-dashboard-ia](https://ana-maria-silva.github.io/projeto-dashboard-ia/)**
+🔗 **[anamariasilvadev.github.io/projeto-dashboard-ia](https://anamariasilvadev.github.io/projeto-dashboard-ia/)**
 
 <br>
 
